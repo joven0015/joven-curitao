@@ -1,21 +1,27 @@
-import logo from "./logo.svg";
-import "./App.css";
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
-  const iloveyou = "HI MAMA I LOVE YOU SO MUCH WORK WEEELL <3";
-  const greetings = "Hello World";
-  const [count, setCount] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        {iloveyou}
-        <p>You clicked {count} times</p>
-        <img src={logo} className="App-logo" alt="logo" />
-        <button onClick={() => setCount(count + 1)}>Click me</button>
-        {greetings}
-      </header>
-    </div>
+    <Router>
+      <nav>
+        <Link to="/" style={{ marginRight: 10 }}>
+          Home
+        </Link>
+        <Link to="/Contact" style={{ marginRight: 10 }}>
+          Contact
+        </Link>
+        <Link to="/About">About</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
