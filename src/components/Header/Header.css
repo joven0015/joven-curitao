@@ -1,0 +1,14 @@
+/* Header.css */
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  color: white;
+  text-align: center; /* Ensure the text is centered */
+}
+
+.name {
+  font-size: 3rem;
+}
