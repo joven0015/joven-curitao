@@ -1,13 +1,6 @@
-import React from "react";
 import "./Experience.css";
+function Header() {
+  return <section id="experience" className="experience"></section>;
+}
 
-const Experience = () => {
-  return (
-    <section id="experience" className="experience">
-      <h2>Experience</h2>
-      <p>BLS International</p>
-    </section>
-  );
-};
-
-export default Experience;
+export default Header;

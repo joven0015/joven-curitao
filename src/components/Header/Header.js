@@ -1,42 +1,31 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
-import image from "../../images/Porfoliopic.png";
-
+import { LoremIpsum } from "lorem-ipsum";
+import Avatar from "../../images/Avatar.png";
+// const lorem = new LoremIpsum();
+// const text = lorem.generateWords(50);
 function Header() {
+  const lorem = new LoremIpsum();
+  const text = lorem.generateWords(50);
+
   return (
-    <section id="header" className="header">
-      <div
-        style={{
-          width: "80%",
-          height: "400px",
-          display: "flex",
-          boxshadow: "0 0 10px rgba(0,0,0,0.1)",
-        }}
-      >
-        <div
-          style={{
-            width: "70%",
-          }}
-        >
-          <h1 className="name">Joven Curitao</h1>
+    <header id="header" className="header">
+      <div id="hero">
+        <div id="intro">
+          <div>
+            <div id="Hi">Hi I’m</div>
+            <div id="full_name">Joven Curitao</div>
+            <div id="career">Computer Engineer & Developer</div>
+            <div id="description">
+              <p>{text}</p>
+            </div>
+          </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-          }}
-        >
-          <img
-            src={image}
-            alt="pic here"
-            style={{
-              maxWidth: "100%", // Correct camelCase: max-width -> maxWidth
-              height: "auto", // Correct camelCase: height remains as it is
-              objectFit: "cover",
-            }}
-          />
+        <div id="intro_img">
+          <img src={Avatar} alt="Avatar"></img>
         </div>
       </div>
-    </section>
+    </header>
   );
 }
 

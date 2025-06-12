@@ -1,0 +1,46 @@
+.heart {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: relative;
+  transform: rotate(-45deg);
+  /* Rotate to create heart shape */
+  animation: heartbeat 1s ease-in-out infinite;
+  /* Make it beat */
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  left: 100px;
+  /* Move the left circle to the right */
+}
+
+.heart::after {
+  top: -100px;
+  /* Move the top circle up */
+  left: 0;
+}
+
+/* Heartbeat animation */
+@keyframes heartbeat {
+
+  0%,
+  100% {
+    transform: rotate(-45deg) scale(1);
+    /* Normal size */
+  }
+
+  50% {
+    transform: rotate(-45deg) scale(1.2);
+    /* Slightly bigger for beat */
+  }
+}
