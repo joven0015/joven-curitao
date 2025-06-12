@@ -23,6 +23,7 @@ function Header() {
         </div>
         <div id="intro_img">
           <img src={Avatar} alt="Avatar"></img>
+          <div class="ball-shadow"></div>
         </div>
       </div>
     </header>
