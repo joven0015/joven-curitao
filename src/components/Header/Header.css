@@ -12,6 +12,7 @@
   width: 80%;
   color: white;
   display: flex;
+  
 }
 #Hi {
   color: #00F2DE;
@@ -137,8 +138,8 @@
   }
 
 #intro_img img{
-  
-   width: 60vw;
+  margin-bottom: 2rem ;
+   width: 30vw;
   height: auto;
 }
 
@@ -146,6 +147,7 @@
 @media (max-width: 260px){
 
 #description {
+  justify-content: center;
   font-size: 7vw;}
 #intro_img img{
    width: 60vw;
