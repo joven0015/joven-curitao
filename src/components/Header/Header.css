@@ -1,157 +1,95 @@
-/* Header CSS */
-.header {
-  padding-top: 6vh;
+.hero{
   height: 100vh;
-  background-color: #0c1b2b;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-#hero{
+.hero_container{
+  height: 80vh;
   width: 80%;
-  color: white;
-  display: flex;
-  
-}
-#Hi {
-  color: #00F2DE;
-  font-family: "Inconsolata", monospace;
-  animation: fromRight 1s,fadeIn 1s ease-out forwards; /* Animation on #fullName */
-}
-
-#full_name {
-  line-height: 1;
-  opacity: 0;
-  font-size: 5vw;
-  font-weight: 700;
-  animation: fromRight .5s,fadeIn 1s ease-out forwards; /* Animation on #fullName */
-  animation-delay: 0.2s; /* Delay on #fullName */
-}
-#career {
-  line-height: 1;
-  opacity: 0;
-  font-size: 2.7vw;
-  font-weight: 700;
-  animation: fromRight 1.5s,fadeInOpacity 1.5s ease-out forwards; /* Animation on #fullName */
-  animation-delay: 0.3; /* Delay on #fullName */
-}
-#description {
-  opacity: 0;
-  animation: fromRight 1.5s,fadeIn 1s ease-out forwards; /* Animation on #fullName */
-  animation-delay: 0.4s; /* Delay on #fullName */
-}
-#intro{
   display: grid;
-  place-items: center;
-  padding: 0vw 3vw;
+  grid-template-rows: 20% 5% 10% 25% 10% 5% 20%;
+  grid-template-columns: 65% 35%;
+  grid-template-areas: 
+  ". ."
+  "item1 photo"
+  "item2 photo"
+  "item3 photo"
+  "item4 photo"
+  "item5 photo"
+  ". .";
 }
-#intro_img{
-  flex-direction: column;  
-  width: 100%;;
-  height: auto;
+.hi{
   display: flex;
-  justify-content: center;
+  align-items: end;
+  grid-area: item1;
 }
-#intro_img img{
-  
-   border-radius: 50%; 
-   width: 20vw;
-  height: auto;
-   transition: transform 1s;  /* Smooth transition for the flip */
-  transform-style: preserve-3d;  /* Preserve 3D space */
-  position: relative;
-    animation: rotateY 2s; /* Animation on #fullName */
-     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  z-index: 2;
+.name{
+  grid-area: item2;
 }
-
-.ball-shadow {
-  width: 21vw;
-  height: 3vw;
-  background: rgba(0, 0, 0, 0.6);
-  filter: blur(5vh);
-  border-radius: 50%;
-  z-index: 1;
-  animation: rotate 1.9s; /* Animation on #fullName */
-  transition: transform .7s; 
+.title{
+  display: flex;
+  align-items: center;
+  grid-area: item3;
 }
- #intro_img img:hover ~ .ball-shadow {
-  transform: rotate(180deg);
+.description{
+  grid-area: item4;
+}
+.button{
+  grid-area: item5;
 }
 
-    #intro_img img:hover  {
-      transform: rotateY(180deg);  /* Flip the image 180 degrees horizontally on hover */
-    }
-@keyframes fromRight {
-  from {
-    transform: translateX(30px); /* Starts 100px to the right */
-  }
-  to {
-    transform: translateX(0); /* Ends at its original position */
-  }
+.img{
+  grid-area: photo;
+  background-color: white;
 }
-@keyframes rotateY {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotateY(1440deg);
-  }
+
+.intro{
+  color: white;
+  background-color: transparent;
 }
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(1440deg);
-  }
+
+.name h1{
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: "Inconsolata", monospace;
+  z-index: 999;
+
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0; /* Starts invisible */
-  }
-  to {
-    opacity: 1; /* Ends visible */
-  }
+
+.hi h1{
+  color: #00E5FF;
+    font-family: "Inconsolata", monospace;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
-@keyframes fadeInOpacity {
-  from {
-    opacity: 0; /* Starts invisible */
+.title p{
+    font-size: 2.4rem;
+  font-weight: 700;
+  opacity: .8;
+}
+@media (max-width: 1455px) {
+  .title p {
+    font-size: 2.2rem;
   }
-  to {
-    opacity: 0.7; /* Ends visible */
+}@media (max-width: 1000px) {
+  .title p {
+    font-size: 1.8rem;
   }
 }
 
-@media (max-width: 1100px)  {
-  /* Header CSS */
-
-  #hero{
-    height: 85vh;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
-    justify-content: start;
+@media (max-width: 800px) {
+.name h1{
+  font-size:7vw;
+  } 
+}
+@media (max-width: 700px) {
+.title p {
+    font-size: 1.7rem;
   }
-  #intro_img{
-    align-items: center;
+}
+@media (max-width: 550px) {
+.title p {
+    font-size: 5vw;
   }
-
-#intro_img img{
-  margin-bottom: 2rem ;
-   width: 30vw;
-  height: auto;
-}
-
-}
-@media (max-width: 260px){
-
-#description {
-  justify-content: center;
-  font-size: 7vw;}
-#intro_img img{
-   width: 60vw;
-  height: auto;
-}
-
 }
