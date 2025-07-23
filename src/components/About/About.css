@@ -1,3 +1,40 @@
-.About{
+.about{
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about h1{
+    color: white;
+}
+.a {
+    border: 2px solid white;
+    height: 100px;
+    width: 100px;
+}
+.acontainer{
+    color: wheat;
+    display: grid;
+    grid-template-columns: 20vw 40vw;
+    gap: 1rem;
+}
+.imgContainer{
+    background-color: white;
+}
+.title-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #47618d; /* subtle line */
+  opacity: 0.5;
+  margin: .7rem;
+}
+.atitle{
+    display: flex;
+    align-items: center;
+}
+.atitle h2{
+    margin-bottom:2rem;
+}
+.aboutMe{
+    margin-bottom: 2rem ;
 }

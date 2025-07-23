@@ -1,3 +1,13 @@
 .experience{
     height: 100vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.econtainer{
+    height: 80vh;
+    width: 100vh;
+    background-color: white;
+
 }
