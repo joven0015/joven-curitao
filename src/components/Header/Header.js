@@ -10,21 +10,21 @@ function Header() {
     <header id="header" className="header">
       <section className="hero">
         <div className="hero_container">
-          <div className="intro hi">
+          <div className="intro hi ">
             <h1>Hi I’m</h1>
           </div>
-          <div className="intro name">
+          <div className="intro name center-text">
             <h1>Joven Curitao</h1>
           </div>
-          <div className="intro title">
+          <div className="intro title center-text">
             <p>Chasing elegance through the chaos of creative computation.</p>
           </div>
-          <div className="intro description">
-            I’m an aspiring software engineer focused on creating clean,
+          <div className="intro description center-text">
+            <p>I’m an aspiring software engineer focused on creating clean,
             user-friendly digital experiences by turning complex problems into
-            simple, elegant solutions and building scalable, intuitive software.
+            simple, elegant solutions and building scalable, intuitive software.s</p>
           </div>
-          <div className="intro button">
+          <div className="intro button ">
             <button>button</button>
           </div>
           <div className="intro img">

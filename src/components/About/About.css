@@ -1,9 +1,78 @@
-.about{
-    height: 100vh;
+ .about{
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px white solid;
 }
+.about-container{
+    margin-top: 40px;
+    max-height: 80%;
+    max-width: 75%;
+    color: white;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto-fill 25% 55%;
+    grid-template-rows: auto-fill 30% 30% 30%;
+    grid-template-areas: 
+    "aboutImg aboutTitle"
+    "aboutImg aboutDescription"
+    "aboutImg aboutDescription";
+}
+.about-img{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    grid-area: aboutImg;
+}
+.about-img img{
+    max-width: 80%;
+    margin-top: 20%;
+}
+.about-title{
+    grid-area: aboutTitle;
+}
+.about-title h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+.about-description{
+    grid-area: aboutDescription;
+}
+.about-description p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.title-line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #47618d; 
+  opacity: 0.5;
+  margin: 0 1rem ;
+}
+.about-title{
+    display: flex;
+    align-items: center;
+    margin-bottom:2rem;
+}
+@media(max-width: 875px){
+    .about-container{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+@media(max-width:1100px){
+    .about-container{
+        max-width: 85%;
+    }
+}
+@media (max-width: 800px){
+   
+}
+
+    /*
 .about h1{
     color: white;
 }
@@ -15,26 +84,56 @@
 .acontainer{
     color: wheat;
     display: grid;
-    grid-template-columns: 20vw 40vw;
+    width: 80%;
     gap: 1rem;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "imgCont atitle"
+    "imgCont aboutme";
 }
 .imgContainer{
+    grid-area: imgCont;
     background-color: white;
 }
 .title-line {
   flex-grow: 1;
   height: 1px;
-  background-color: #47618d; /* subtle line */
+  background-color: #47618d; 
   opacity: 0.5;
-  margin: .7rem;
+  margin-right: 1rem;
+  margin-left: .3rem;
 }
 .atitle{
+    grid-area: atitle;
     display: flex;
     align-items: center;
-}
-.atitle h2{
     margin-bottom:2rem;
+
 }
 .aboutMe{
+    grid-area: aboutme;
     margin-bottom: 2rem ;
 }
+.aboutMe p{
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    .acontainer{
+    color: wheat;
+    display: grid;
+    height: 80%;
+    width: 90%;
+    gap: 1rem;
+    grid-template-rows: 5% 20vw 40%;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: 
+    "atitle atitle"
+    "imgCont imgCont"
+    "aboutme aboutme";  
+}
+.aboutMe p {
+    font-size: 12px;
+}
+} */

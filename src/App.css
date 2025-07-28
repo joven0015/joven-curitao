@@ -19,8 +19,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
-
 @keyframes expand {
   from {
     transform: scale(1);
