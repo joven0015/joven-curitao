@@ -44,6 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 .img h1{
   background-color: white;
@@ -96,7 +97,7 @@
   font-size:7vw;
   } 
   .hero_container{
-  grid-template-rows: auto-fill  20% 5% 10% 25% 10% 5% ;
+  grid-template-rows: auto-fill  40% 5% 10% 25% 10% 5% ;
   grid-template-columns:  15% 80%;
   
   grid-template-areas: 
@@ -107,6 +108,11 @@
   "item4 item4"
   "item5 item5";
   justify-content: center;
+}
+.img h1{
+  height: 40vw;
+  width: 40vw;
+
 }
 .header{
   margin-top: 50px ;
@@ -125,6 +131,7 @@
     font-size: 1.7rem;
     text-align: center;
   }
+ 
   .hi h1{
     font-size: .7rem;
     text-align: center;
