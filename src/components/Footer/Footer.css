@@ -1,0 +1,177 @@
+/* 
+>>>>>>>>>>>>>> LEFT <<<<<<<<<<<<<<<<<
+*/
+.bioLinks{
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+}
+.bioLinks ul{
+  text-decoration: none;
+  position: relative;
+  bottom: 165px;
+}
+.bioLinks ul li{
+  list-style: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: transform .2s ease-in-out;
+}
+.bioLinks ul li:hover{
+  text-shadow: 0 0 2px  white;
+  transform: translateY(-2px); 
+  font-size: 1.5rem;
+}
+.bioLinks ul li a{
+  color: white;
+  opacity: 0.7;
+}
+.bioLinks ul li a:hover{
+  opacity: 1;
+}
+.unBioLinks{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.bioLinks::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 80%;
+  bottom: 0;
+  width: 2px;
+  height: 165px;
+  background: white;
+  opacity: 0.5;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+
+/* 
+>>>>>>>>>>>>>> RIGHT <<<<<<<<<<<<<<<<<
+*/
+.Email{
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+}
+.Email a{
+  right: 35px;
+  transform: rotate(90deg);
+  transform-origin: right top;
+  display: inline-block;
+  position: relative;
+  bottom: 70px;
+  text-decoration: none;
+  font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+  color: white;
+  opacity: 0.7;
+  transition: font-weight .1s ease-in-out,bottom .2s ease-in-out;
+}
+.Email a:hover{
+  opacity: 1;
+  bottom: 75px;
+  font-weight: 800;
+
+}
+.Email::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 20%;
+  bottom: 0;
+  width: 2px;
+  height: 70px;
+  background: white;
+  opacity: 0.5;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+
+
+@media (max-width: 1100px) {
+  .Email{
+  right: 0;
+}
+.bioLinks{
+  left: 0;
+}
+}
+@media (max-width: 875px) {
+.Email{
+  right: -15px;
+}
+.bioLinks{
+  left: -10px;
+}
+}
+@media (max-width: 600px) {
+.bioLinks{
+  position: static;
+  left: 0;
+}
+.bioLinks ul{
+  bottom: 0;
+  padding: 0;
+}
+
+.bioLinks ul li:hover{
+  transform: translateY(0); 
+  font-size: 1.5rem;
+}
+.unBioLinks{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.bioLinks::after {
+  display: none;
+}
+
+
+/* 
+>>>>>>>>>>>>>> RIGHT <<<<<<<<<<<<<<<<<
+*/
+.Email{
+  position: static;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.Email a{
+  right: 0;
+  transform: rotate(0);
+  transform-origin: center top;
+  position: static;
+  bottom: 0;
+}
+.Email a:hover{
+  opacity: 1;
+  bottom: 75px;
+  font-weight: 800;
+
+}
+.Email::after {
+  display: none;
+}
+
+
+/* 
+>>>>>>>>>>>>> CENTER <<<<<<<<<<<<<<<<<<
+*/
+
+
+.footer-Container{
+  margin-bottom: 15px;
+}
+
+}

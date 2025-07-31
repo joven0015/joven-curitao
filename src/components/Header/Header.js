@@ -1,11 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
+import Avatar from "../../images/Avatar.png";
+
 // import Avatar from "../../images/Avatar.png";
 // const lorem = new LoremIpsum();
 // const text = lorem.generateWords(50);
 
 function Header() {
- 
   return (
     <header id="header" className="header">
       <section className="hero">
@@ -20,15 +21,20 @@ function Header() {
             <p>Chasing elegance through the chaos of creative computation.</p>
           </div>
           <div className="intro description center-text">
-            <p>I’m an aspiring software engineer focused on creating clean,
-            user-friendly digital experiences by turning complex problems into
-            simple, elegant solutions and building scalable, intuitive software.s</p>
+            <p>
+              I’m an aspiring software engineer focused on creating clean,
+              user-friendly digital experiences by turning complex problems into
+              simple, elegant solutions and building scalable, intuitive
+              softwares.
+            </p>
           </div>
           <div className="intro button ">
             <button>button</button>
           </div>
           <div className="intro img">
-            <h1>img</h1>
+            <div className="img-container">
+              <img src={Avatar} alt="heroImg" className="heroImg" />
+            </div>
           </div>
         </div>
       </section>
