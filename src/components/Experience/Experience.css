@@ -1,7 +1,67 @@
 .experience{
     height: 30%;
     display: flex;
-    align-items: center;
     justify-content: center;
     min-height: 100vh ;
+    color: white;
+
+}
+.experience h1{
+  font-family: "Inconsolata", monospace;
+font-weight: 700;
+ text-align: center;
+}
+.BLSlogo{
+    opacity: 0;
+}
+.experience h1:hover{
+    cursor: pointer;
+}
+.BLSlogo{
+    transition: opacity .5s ease-in-out;
+}
+.experience:has(h1:hover) .BLSlogo{
+    opacity: 1;
+}
+.BLS{
+    font-weight:900;
+}
+.econtainer img{
+}
+.etitle-container{
+    margin: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+.eImg-container{
+    background-color: rebeccapurple;
+    position: relative;
+        height: 500px;
+    width: 900px;
+}
+
+.eImg-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 40vw;
+    min-width: 900px;
+}
+.eh1Flex{
+    display: flex;
+    justify-content: center;
+}
+.flexImg{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 950px) {
+.eImg-container img {
+    min-width: 70vw;
+}
+    .eImg-container{
+        width:70vw ;
+    }
 }

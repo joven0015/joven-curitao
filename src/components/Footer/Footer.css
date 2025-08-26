@@ -2,16 +2,19 @@
 >>>>>>>>>>>>>> LEFT <<<<<<<<<<<<<<<<<
 */
 .bioLinks{
+  background-color: transparent;
   position: fixed;
   bottom: 0;
   left: 15px;
 }
 .bioLinks ul{
+  background-color: transparent;
   text-decoration: none;
   position: relative;
   bottom: 165px;
 }
 .bioLinks ul li{
+  background-color: transparent;
   list-style: none;
   font-size: 1.5rem;
   color: white;
@@ -23,8 +26,12 @@
   font-size: 1.5rem;
 }
 .bioLinks ul li a{
+  background-color: transparent;
   color: white;
   opacity: 0.7;
+}
+.bioLinks ul li a i{
+  background-color: transparent;
 }
 .bioLinks ul li a:hover{
   opacity: 1;
@@ -58,8 +65,11 @@
   position: fixed;
   bottom: 0;
   right: 15px;
+  
 }
 .Email a{
+  background-color: transparent;
+
   right: 35px;
   transform: rotate(90deg);
   transform-origin: right top;

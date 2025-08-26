@@ -15,11 +15,11 @@ function About() {
         <div className="about-description">
           <p>
             Hello! I'm Joven. I love building things online and growing with
-            every experience and project. I hold a Bachelor's degree in Computer
-            Engineering but chose to pursue my passion for becoming a
-            professional software engineer. Right now, I'm actively deepening my
-            expertise in web development and creating projects including this
-            portfolio.
+            every experience and project. I hold a Bachelor's degree in{" "}
+            <span className="comEn">Computer Engineering</span> but chose to
+            pursue my passion for becoming a professional software engineer.
+            Right now, I'm actively deepening my expertise in web development
+            and creating projects including this portfolio.
             <br />
             <br />
             I love discovering smarter ways to build seamless user experiences

@@ -70,6 +70,9 @@
     align-items: center;
     margin-bottom:2rem;
 }
+.comEn:hover{
+    
+}
 
 @media (min-width: 1500px) and (max-width: 2000px) {
    .about-description p{
