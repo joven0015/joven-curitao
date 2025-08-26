@@ -1,8 +1,12 @@
+@import url("../../App.css");
+
 .hero{
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  animation: fadeIn .5s 2.5s ease-in forwards;
 }
 .hero_container{
   min-height: 50vh;

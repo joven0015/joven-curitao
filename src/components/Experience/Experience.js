@@ -1,10 +1,17 @@
 import "./Experience.css";
+import useInView from "../../hooks/useInView.js";
 import BLS from "../../images/BLS.jpg";
 import logoBLS from "../../images/logoBLS.svg";
 
 function Header() {
+  const [ref, isVisible] = useInView({ threshold: 0.1 });
+
   return (
-    <section id="experience" className="experience">
+    <section
+      ref={ref}
+      id="experience"
+      className={`experience  fade-section ${isVisible ? "visible" : ""}`}
+    >
       <div className="econtainer">
         <div className="etitle-container">
           <div class="title-line"></div>

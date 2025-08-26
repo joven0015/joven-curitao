@@ -1,16 +1,22 @@
 import "./About.css";
+import useInView from "../../hooks/useInView.js";
 import aboutImg from "../../images/hero.jpg";
 function About() {
+  const [ref, isVisible] = useInView({ threshold: 0.1 });
   return (
-    <section id="about" className="about">
+    <section
+      id="about"
+      ref={ref}
+      className={`about  fade-section ${isVisible ? "visible" : ""}`}
+    >
       <div className="about-container">
         <div className="about-img">
           <img src={aboutImg} alt="myImg" />
         </div>
         <div className="about-title">
-          <div class="title-line"></div>
+          <div className="title-line"></div>
           <h2>About Me</h2>
-          <div class="title-line"></div>
+          <div className="title-line"></div>
         </div>
         <div className="about-description">
           <p>

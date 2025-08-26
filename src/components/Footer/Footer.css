@@ -1,3 +1,5 @@
+@import url("../../App.css");
+
 /* 
 >>>>>>>>>>>>>> LEFT <<<<<<<<<<<<<<<<<
 */
@@ -14,12 +16,21 @@
   bottom: 165px;
 }
 .bioLinks ul li{
+  opacity: 0;
+  animation:  fadeIn .2s  ease-in forwards;
   background-color: transparent;
   list-style: none;
   font-size: 1.5rem;
   color: white;
-  transition: transform .2s ease-in-out;
+  transition: transform .4s ease-in-out;
 }
+
+.bioLinks li:nth-child(1) { animation-delay: 1s; }
+.bioLinks li:nth-child(2) { animation-delay: 0.75s; }
+.bioLinks li:nth-child(3) { animation-delay: 0.5s; }
+
+
+
 .bioLinks ul li:hover{
   text-shadow: 0 0 2px  white;
   transform: translateY(-2px); 
@@ -43,6 +54,7 @@
   align-items: center;
 }
 .bioLinks::after {
+    animation: FromBottom8 .5s ease-in forwards;
   content: "";
   display: block;
   position: absolute;
@@ -65,11 +77,10 @@
   position: fixed;
   bottom: 0;
   right: 15px;
-  
 }
 .Email a{
+  animation:  fadeIn .5s 1s ease-in forwards ;
   background-color: transparent;
-
   right: 35px;
   transform: rotate(90deg);
   transform-origin: right top;
@@ -78,8 +89,8 @@
   bottom: 70px;
   text-decoration: none;
   font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+  opacity: 0;
   color: white;
-  opacity: 0.7;
   transition: font-weight .1s ease-in-out,bottom .2s ease-in-out;
 }
 .Email a:hover{
@@ -89,6 +100,7 @@
 
 }
 .Email::after {
+  animation: FromBottom8 .5s ease-in forwards;
   content: "";
   display: block;
   position: absolute;

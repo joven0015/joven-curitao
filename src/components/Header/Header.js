@@ -8,7 +8,7 @@ import Avatar from "../../images/Avatar.png";
 
 function Header() {
   return (
-    <header id="header" className="header">
+    <header id="header" className="section header">
       <section className="hero">
         <div className="hero_container">
           <div className="intro hi ">
