@@ -35,6 +35,7 @@ function Header() {
               <button
                 className="resumeBtn"
                 style={{
+                  borderRadius: 3,
                   color: "white",
                   padding: 5,
                   backgroundColor: "#001833",
