@@ -1,7 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
-import Avatar from "../../images/Avatar.png";
 
+import Avatar from "../../images/Avatar.png";
+import Resume from "../../files/Joven-Curitao-Resume.pdf";
+import { FaDownload } from "react-icons/fa";
 // import Avatar from "../../images/Avatar.png";
 // const lorem = new LoremIpsum();
 // const text = lorem.generateWords(50);
@@ -29,7 +31,19 @@ function Header() {
             </p>
           </div>
           <div className="intro button ">
-            <button>button</button>
+            <a href={Resume} download>
+              <button
+                className="resumeBtn"
+                style={{
+                  color: "white",
+                  padding: 5,
+                  backgroundColor: "#001833",
+                }}
+              >
+                Resume
+                <FaDownload style={{ paddingBottom: 3, margin: 5 }} />
+              </button>
+            </a>
           </div>
           <div className="intro img">
             <div className="img-container">

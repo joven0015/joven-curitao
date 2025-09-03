@@ -33,7 +33,13 @@
   display: flex;
   align-items: center;
   grid-area: item3;
-  
+}
+.resumeBtn{
+  transition: .2s 0s ease-in-out;
+}
+.resumeBtn:hover{
+   text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.8);
+     transform: translate(1px, -1px);
 }
 .description{
   grid-area: item4;
@@ -59,10 +65,7 @@
   height: 350px;
   width: auto;
 }
-.img {
 
-
-}
 .heroImg{
   border-radius: 50%;
   height: 100%;
